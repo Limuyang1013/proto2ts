@@ -1,0 +1,16 @@
+{
+  "name": "proto2ts",
+  "version": "1.0.0",
+  "description": "ts2proto transform .proto file inti typescript file",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && tsc -p tsconfig.json",
+    "build:w": "tsc -p tsconfig.json -w",
+    "test": "node lib/src/index.js"
+  },
+  "author": "Zhan yue",
+  "license": "ISC",
+  "dependencies": {
+    "protobufjs": "^7.2.4"
+  }
+}

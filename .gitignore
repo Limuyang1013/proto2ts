@@ -1,0 +1,10 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.idea
+*node_modules
+
+# OS X temporary files
+.DS_Store

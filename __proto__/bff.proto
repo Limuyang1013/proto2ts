@@ -1,0 +1,31 @@
+syntax = "proto2";
+package proto.bff.test;
+
+enum ErrorCode {
+  ERROR_1 = 1001;
+  ERROR_2 = 1002;
+}
+
+message ResponseMeta {
+  optional int32 code = 1;
+  required string type = 2;
+}
+
+message RequestMeta{
+  message InnerItem {
+    optional string comment = 1;
+    repeated string photos = 2;
+    repeated string videos = 3;
+  }
+
+  optional string comment = 1;
+  repeated ResponseMeta photos = 2;
+  repeated string videos = 3;
+  map<string, ResponseMeta> map_meta = 4;
+  map<string, string> map_string = 5;
+  optional InnerItem item = 6;
+}
+
+service GRPCDemo {
+  rpc SimpleMethod (RequestMeta) returns (ResponseMeta);
+}
