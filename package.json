@@ -1,7 +1,7 @@
 {
   "name": "pro2ts",
-  "version": "1.0.0",
-  "description": "ts2proto transform .proto file inti typescript file",
+  "version": "1.0.1",
+  "description": "ts2proto transform .proto file into typescript file",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && tsc -p tsconfig.json",
