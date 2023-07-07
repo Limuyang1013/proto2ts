@@ -1,5 +1,5 @@
 {
-  "name": "proto2ts",
+  "name": "pro2ts",
   "version": "1.0.0",
   "description": "ts2proto transform .proto file inti typescript file",
   "main": "lib/index.js",

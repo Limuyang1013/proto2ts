@@ -1,22 +1,22 @@
 ## Introduction 📚
-Proto2TS is a lightweight, out-of-the-box tool that enables seamless conversion of Proto files to TypeScript. It caters to basic daily usage scenarios and offers convenience for expansion.
+pro2ts is a lightweight, out-of-the-box tool that enables seamless conversion of Proto files to TypeScript. It caters to basic daily usage scenarios and offers convenience for expansion.
 
 ## Key Features ⭐️
 
-- Ready for Immediate Use: Proto2TS is built to be readily usable, requiring minimal setup and configuration.based on `protobufjs`
-- Support for Common Use Cases: Proto2TS support the vast majority of conversion scenarios, whether it is fields, arrays, enumerations, methods or nested messages
-- Easily Extensible: Proto2TS provides a flexible foundation for future expansion, allowing users to incorporate additional functionality and customize the conversion process according to their specific requirements.
+- Ready for Immediate Use: pro2ts is built to be readily usable, requiring minimal setup and configuration.based on `protobufjs`
+- Support for Common Use Cases: pro2ts support the vast majority of conversion scenarios, whether it is fields, arrays, enumerations, methods or nested messages
+- Easily Extensible: pro2ts provides a flexible foundation for future expansion, allowing users to incorporate additional functionality and customize the conversion process according to their specific requirements.
 
 ## Installation and Usage 🚀
 
-1. Install Proto2TS using the package manager of your choice:
+1. Install pro2ts using the package manager of your choice:
 ```markdown
-pnpm install proto2ts
+pnpm install pro2ts
 ```
 2. Import `parseProtoRoot` method
 
 ```javascript
-import { parseProtoRoot } from 'proto2ts'
+import { parseProtoRoot } from 'pro2ts'
 
 const ts = parseProtoRoot(readFileSync(join(process.cwd(), './__proto__/bff.proto'), 'utf-8'))
 ```
